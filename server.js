@@ -7,5 +7,5 @@ app.get('/', function(req, res){
     res.send('Hello World');
 });
 
-app.listen(conf.server.port);
+app.listen(process.env.PORT || conf.server.port);
 console.log('Listening on ' + conf.server.host + ':' + conf.server.port);
