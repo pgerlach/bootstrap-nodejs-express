@@ -1,6 +1,6 @@
 var conf = {
   server : {
-    host: 'local.host',
+    host: 'localhost',
     port: 4242
   }
 };
@@ -14,7 +14,6 @@ if ('PORT' in process.env) {
 if ('SERVER_HOST' in process.env) {
   conf.server.host = process.env.SERVER_HOST;
 }
-
 
 
 module.exports = conf;
